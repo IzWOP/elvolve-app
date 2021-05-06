@@ -26,7 +26,7 @@ $green: #1ECD97;
 		height: 100%;
 		left: 0;
 		top: 0;
-		background-image: linear-gradient(to left, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3));
+		background-image: linear-gradient(to left, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
 		z-index: 0;
 	}
 .container{
@@ -70,6 +70,17 @@ form{
 	  color: #2c2c2c;
 	  margin-bottom:1.5rem;
 	  text-indent: 1rem;
+	  &:focus{
+		outline: none;
+		background-color: #fff;
+	  }
+	  &:focus-visible{
+		outline: none;
+		background-color: #fff;
+	  }
+	  &:-internal-autofill-selected {
+		  background-color: #fff !important;
+	  }
 	  
 	}
 	p {

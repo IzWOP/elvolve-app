@@ -11,6 +11,7 @@ const emailSchema = yup
     .shape({
         email: yup
             .string()
+            .email()
             .required('Email is required'),
     });
 
@@ -67,7 +68,7 @@ const Home = (props) => {
                             placeholder="Email"
                             {...register("email",{pattern:"[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"})} /> 
                             {errors.email && <p>{errors.email.message}</p>}
-                        <input className='submit validate' type="submit" value=""/>
+                        <button className='submit' type="submit" value="Submitt"></button>
                     </form>
                 </div>
             </div>
