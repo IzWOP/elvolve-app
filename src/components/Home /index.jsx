@@ -1,3 +1,4 @@
+import AOS from 'aos'; 
 import React from 'react';
 import {useForm} from "react-hook-form";
 import {yupResolver} from '@hookform/resolvers/yup';
@@ -5,6 +6,7 @@ import * as yup from 'yup';
 
 //stylesheets
 import './index.scss';
+import 'aos/src/sass/aos.scss';
 //yup schema
 const emailSchema = yup
     .object()
@@ -20,7 +22,7 @@ const Home = (props) => {
     const { register, handleSubmit, formState:{ errors } } = useForm({
         resolver: yupResolver(emailSchema)
       });
-    
+      AOS.init();
 
     const formFix = (formData) => {
         const cleanData = {
@@ -59,11 +61,11 @@ const Home = (props) => {
             <div className='row'>
                 <div className='billboard_textbox'>
                     <h1> Evolve Band</h1>
-                    <h2>Coming Soon</h2>
-                    <p>
+                    <h2 data-aos="zoom-in" data-aos-delay="3000" data-aos-duration="2000" data-aos-easing="ease-out-cubic">Coming Soon</h2>
+                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                         Creating experiences for your event<br/> using our wristbands.
                     </p>
-                    <form onSubmit={handleSubmit(onSubmitEmail)}>
+                    <form onSubmit={handleSubmit(onSubmitEmail)} data-aos-delay="3000"  data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                         <input
                             className='form-item'
                             name="email"
