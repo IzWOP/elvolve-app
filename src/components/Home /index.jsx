@@ -58,7 +58,8 @@ const Home = (props) => {
         <div className='container'>
             <div className='row'>
                 <div className='billboard_textbox'>
-                    <h1>Coming Soon</h1>
+                    <h1> Evolve Band</h1>
+                    <h2>Coming Soon</h2>
                     <p>
                         Creating experiences for your event<br/> using our wristbands.
                     </p>
