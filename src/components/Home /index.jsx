@@ -54,12 +54,13 @@ const Home = (props) => {
     }
       
     return <div className='billboard'>
+        <div className='background'></div>
         <div className='container'>
             <div className='row'>
                 <div className='billboard_textbox'>
-                    <h1>Coming<br/> Soon</h1>
+                    <h1>Coming Soon</h1>
                     <p>
-                        Creating experiences for your event using our wristbands.
+                        Creating experiences for your event<br/> using our wristbands.
                     </p>
                     <form onSubmit={handleSubmit(onSubmitEmail)}>
                         <input

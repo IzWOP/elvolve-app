@@ -1,9 +1,14 @@
 $gray: #bbbbbb;
 $green: #1ECD97;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 @import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+
 body{
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
 
 .billboard {
@@ -18,10 +23,6 @@ body{
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	font-family: "Montserrat",
-	"Helvetica Neue",
-	Arial,
-	sans-serif;
 	&::before{
 		position: absolute;
 		content: '';
@@ -32,6 +33,13 @@ body{
 		background-image: linear-gradient(to left, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
 		z-index: 0;
 	}
+	.background{
+		-webkit-backdrop-filter:saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+	}
 .container{
 	z-index: 1;
 }
@@ -39,32 +47,29 @@ body{
 	h1{
 		text-align: center;
 		font-size: 4rem;
-		font-family: "Montserrat",
-	"Helvetica Neue",
-	Arial,
-	sans-serif;
 	margin-bottom: 0;
+    font-weight: 100;
 	}
 	&_textbox{
 	padding-left: 15px;
 	padding-right: 15px;
+	p{
+		text-align: center;
+		margin-bottom: 2rem;
+	}
 
 	}
 }
 form{
-	font-family: "Montserrat",
-	"Helvetica Neue",
-	Arial,
-	sans-serif;
 	display:  flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	max-width: 600px;
+	max-width: 500px;
 	.form-item{
 	  padding: 10px 18px 10px 18px;
-	  max-width: 400px;
+	  max-width: 250px;
 	  width: 100%;
 	  font-size: 1rem;
 	  background-color: #fff;
