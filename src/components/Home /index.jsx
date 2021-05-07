@@ -48,7 +48,7 @@ const Home = (props) => {
         function callback(){
             setTimeout(function () {
                     button.classList.remove("validate");
-            }, 1250);
+            }, 2250);
         }
 
     }
