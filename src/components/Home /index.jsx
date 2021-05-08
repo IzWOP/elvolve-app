@@ -60,10 +60,10 @@ const Home = (props) => {
         <div className='container'>
             <div className='row'>
                 <div className='billboard_textbox'>
-                    <h1> Evolve Band</h1>
+                    <h1> Evolve<br/> Band</h1>
                     <h2 data-aos="zoom-in" data-aos-delay="3000" data-aos-duration="2000" data-aos-easing="ease-out-cubic">Coming Soon</h2>
                     <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
-                        Creating experiences for your event<br/> using our wristbands.
+                        Creating experiences for your event.
                     </p>
                     <form onSubmit={handleSubmit(onSubmitEmail)} data-aos-delay="3000"  data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                         <input
